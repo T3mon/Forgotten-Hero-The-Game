@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static Main.SwordAttack;
 
 namespace Main
 {
@@ -12,15 +11,14 @@ namespace Main
         public float moveSpeed = 1f;
         public float collisionOffset = 0.05f;
         public ContactFilter2D contactFilter;
-        public enum Direction { up, down, left, right } // TODO : move out
+        public enum Direction { up, down, left, right } // TODO : move out to namespace
 
-        public Direction mouseDirection;
-
+        public SwordAttack swordAttack;
+        private Direction mouseDirection;
         private Vector2 movementInput;
         private Rigidbody2D rigidBody;
         private Animator animator;
         private SpriteRenderer spriteRenderer;
-        private SwordAttack swordAttack;
         private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
         // Start is called before the first frame update
@@ -100,7 +98,6 @@ namespace Main
         {
             AnimateAttack();
             swordAttack.AttackRight();
-
         }
 
         public void AttackSword()
