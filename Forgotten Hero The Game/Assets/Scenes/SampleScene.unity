@@ -3296,7 +3296,7 @@ Transform:
   m_Children:
   - {fileID: 470236752}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &816531035
 MonoBehaviour:
@@ -4054,6 +4054,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1191988225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 731527022897894555, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
+  m_PrefabInstance: {fileID: 3729878884099467503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e83c5022664e04d93b6fd297440a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1191988226 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3651177969264647965, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
+  m_PrefabInstance: {fileID: 3729878884099467503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1967423891
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,6 +4352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 693347208130315660, guid: cc10d130083d206489f92188008fa3c1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4087549ce19863940886bba639f3ee04, type: 2}
     - target: {fileID: 4582280596665550490, guid: cc10d130083d206489f92188008fa3c1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -4384,6 +4404,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime
       objectReference: {fileID: 0}
+    - target: {fileID: 9186951555317781912, guid: cc10d130083d206489f92188008fa3c1, type: 3}
+      propertyPath: m_Size.x
+      value: 0.1280762
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186951555317781912, guid: cc10d130083d206489f92188008fa3c1, type: 3}
+      propertyPath: m_Size.y
+      value: 0.12807623
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186951555317781912, guid: cc10d130083d206489f92188008fa3c1, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0049826503
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186951555317781912, guid: cc10d130083d206489f92188008fa3c1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.021923868
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186951555317781912, guid: cc10d130083d206489f92188008fa3c1, type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186951555317781912, guid: cc10d130083d206489f92188008fa3c1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc10d130083d206489f92188008fa3c1, type: 3}
 --- !u!1001 &3729878884099467503
@@ -4400,6 +4444,14 @@ PrefabInstance:
     - target: {fileID: 731527022897894555, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 731527022897894555, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
+      propertyPath: swordCollider
+      value: 
+      objectReference: {fileID: 1191988226}
+    - target: {fileID: 3651177969264647965, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4520333039619381556, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4423,7 +4475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6856644016726354900, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6856644016726354900, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4476,7 +4528,7 @@ PrefabInstance:
     - target: {fileID: 9085901434786823505, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
       propertyPath: swordAttack
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1191988225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
 --- !u!1 &3729878884099467504 stripped
@@ -4512,6 +4564,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  swordAttack: {fileID: 0}
 --- !u!4 &3729878884099467512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6856644016726354900, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}

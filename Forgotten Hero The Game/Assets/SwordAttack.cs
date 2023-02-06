@@ -6,19 +6,19 @@ namespace Main
 {
     public class SwordAttack : MonoBehaviour
     {
-        public enum Direction { up, down, left, right } // *TODO Move it to namespace level 
-        public Direction mouseDirection;
         public float damage = 3f;
+        public Collider2D swordCollider;
 
-        private Vector2 rightAttackOffset;
-        private Collider2D swordCollider;
-        private PlayerController playerController;
+        private Direction mouseDirection;
+        private enum Direction { up, down, left, right } // *TODO Move it to namespace level 
+        private Vector3 rightAttackOffset;
+        // private PlayerController playerController;
 
         // Start is called before the first frame update
         void Start()
         {
             swordCollider = GetComponent<Collider2D>();
-            playerController = GetComponent<PlayerController>();
+            // playerController = GetComponent<PlayerController>();
             swordCollider.enabled = false;
             rightAttackOffset = transform.position; // attack offset is right by default
         }
@@ -30,9 +30,7 @@ namespace Main
 
         public void AttackRight() // ! delete this
         {
-            swordCollider.enabled = true;
-            transform.position = rightAttackOffset;
-
+            Debug.Log("test");
         }
 
         public void Attack()

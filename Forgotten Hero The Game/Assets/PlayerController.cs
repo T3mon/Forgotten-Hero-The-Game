@@ -27,7 +27,6 @@ namespace Main
             rigidBody = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             spriteRenderer = GetComponent<SpriteRenderer>();
-            swordAttack = GetComponent<SwordAttack>();
         }
 
         private void FixedUpdate()
@@ -52,7 +51,7 @@ namespace Main
             xAxisFlip();
         }
 
-        private void xAxisFlip()
+        private void xAxisFlip() // flip the character to the left
         {
             if (movementInput.x < 0)
                 spriteRenderer.flipX = true;
@@ -74,13 +73,13 @@ namespace Main
                 castCollisions,
                 moveSpeed * Time.fixedDeltaTime + collisionOffset);
 
-            if (count == 0)
+            if (count != 0)
+                return false; // if we colide, player cant move
+            else 
             {
                 rigidBody.MovePosition(rigidBody.position + derection * moveSpeed * Time.fixedDeltaTime);
                 return true;
             }
-            else // if we colide, player cant move
-                return false;
         }
 
         void OnMove(InputValue inputValue)
@@ -97,14 +96,12 @@ namespace Main
         void OnFire()
         {
             AnimateAttack();
-            swordAttack.AttackRight();
         }
 
         public void AttackSword()
         {
             Debug.Log(swordAttack);
-            swordAttack.AttackRight();
-
+            // swordAttack.AttackRight();
         }
 
         private void AnimateAttack()
