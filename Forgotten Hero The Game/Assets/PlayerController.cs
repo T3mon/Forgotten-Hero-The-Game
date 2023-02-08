@@ -55,9 +55,9 @@ public partial class PlayerController : MonoBehaviour
         else if (movementInput.x > 0)
             spriteRenderer.flipX = false;
 
-        if (mouseDirection == Direction.left)
+        if (mouseDirection == Direction.Left)
             spriteRenderer.flipX = true;
-        if (mouseDirection == Direction.right)
+        if (mouseDirection == Direction.Right)
             spriteRenderer.flipX = false;
     }
 
@@ -115,16 +115,16 @@ public partial class PlayerController : MonoBehaviour
         float directionToFloat = 0f; // workaroud to work with blend tree and animate 
         switch (mouseDirection) // just to turn to float: 0f = up, 0.25f = down, 0.5f = turned, 0.75f = turned
         {
-            case Direction.up:
+            case Direction.Up:
                 directionToFloat = 0f;
                 break;
-            case Direction.down:
+            case Direction.Down:
                 directionToFloat = 0.25f;
                 break;
-            case Direction.right:
+            case Direction.Right:
                 directionToFloat = 0.5f;
                 break;
-            case Direction.left:
+            case Direction.Left:
                 directionToFloat = 0.75f;
                 break;
             default:
@@ -139,16 +139,16 @@ public partial class PlayerController : MonoBehaviour
         if (yPos >= 0)
         {
             if (Math.Abs(Xpos) < yPos)
-                return Direction.up;
+                return Direction.Up;
             else
-                return Xpos > 0 ? Direction.right : Direction.left;
+                return Xpos > 0 ? Direction.Right : Direction.Left;
         }
         else
         {
             if (Math.Abs(Xpos) < Math.Abs(yPos))
-                return Direction.down;
+                return Direction.Down;
             else
-                return Xpos > 0 ? Direction.right : Direction.left;
+                return Xpos > 0 ? Direction.Right : Direction.Left;
         }
     }
 }

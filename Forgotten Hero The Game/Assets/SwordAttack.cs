@@ -27,16 +27,16 @@ public partial class SwordAttack : MonoBehaviour
         swordCollider.enabled = true;
         switch (direction) // Vector values are hardcore to be pixel perfect
         {
-            case Direction.left:
+            case Direction.Left:
                 transform.localPosition = new Vector3(rightAttackOffset.x * -1, rightAttackOffset.y);
                 break;
-            case Direction.right:
+            case Direction.Right:
                 transform.localPosition = rightAttackOffset;
                 break;
-            case Direction.up:
+            case Direction.Up:
                 transform.localPosition = new Vector3(0, -0.08f);
                 break;
-            case Direction.down:
+            case Direction.Down:
                 transform.localPosition = new Vector3(0.02f, -0.14f);
                 break;
             default:
