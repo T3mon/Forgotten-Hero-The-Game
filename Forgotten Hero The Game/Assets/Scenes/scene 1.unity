@@ -4469,6 +4469,14 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4726332106668264414, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5432669945637873265, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604320769064852317, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4531,40 +4539,6 @@ PrefabInstance:
       objectReference: {fileID: 1191988225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
---- !u!1 &3729878884099467504 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5604320769064852317, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
-  m_PrefabInstance: {fileID: 3729878884099467503}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3729878884099467505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3729878884099467504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7cbd85f4f14cf345965f88c0c2bf9c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  collisionOffset: 0.05
-  contactFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  swordAttack: {fileID: 0}
 --- !u!4 &3729878884099467512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6856644016726354900, guid: 3ad14ef591bc0e045b5a32106bfffd80, type: 3}
