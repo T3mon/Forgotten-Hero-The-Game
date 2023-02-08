@@ -221,7 +221,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  swordAttack: {fileID: 731527022897894555}
+  swordAttack: {fileID: 0}
 --- !u!50 &316220000903732649
 Rigidbody2D:
   serializedVersion: 4
