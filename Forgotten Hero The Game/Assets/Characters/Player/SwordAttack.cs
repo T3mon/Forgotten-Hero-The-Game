@@ -47,7 +47,7 @@ public partial class SwordAttack : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            Enemy enemy = other.GetComponent<Enemy>();
+            var enemy = other.GetComponent<DamageableCharacter>();
             if (enemy != null)
             {
                 Vector3 parentPosition = gameObject.GetComponent<Transform>().position;

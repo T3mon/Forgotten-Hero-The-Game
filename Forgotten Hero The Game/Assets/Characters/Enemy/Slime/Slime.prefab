@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4582280596665550490}
+  - component: {fileID: -2669325909761021115}
+  - component: {fileID: 3712617085573539163}
   - component: {fileID: 8697007747101964805}
   - component: {fileID: -5333093036699164531}
   - component: {fileID: 9186951555317781912}
-  - component: {fileID: -2669325909761021115}
   - component: {fileID: 693347208130315660}
   m_Layer: 0
   m_Name: Slime
@@ -36,6 +37,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2669325909761021115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7806349974369670585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292f8f028af5a244d992dcfc612d79a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  knockbackFore: 100
+--- !u!114 &3712617085573539163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7806349974369670585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8f6394a693a68b44b047549ed7fb989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 2848804117387085265, guid: 5d3fe6d8cf09cfe42889134cf80a29dd, type: 3}
+  targatable: 1
+  targetable: 1
 --- !u!212 &8697007747101964805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -125,19 +155,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0049826503, y: -0.021923868}
   m_Size: {x: 0.1280762, y: 0.12807623}
   m_Direction: 0
---- !u!114 &-2669325909761021115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7806349974369670585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 292f8f028af5a244d992dcfc612d79a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
 --- !u!95 &693347208130315660
 Animator:
   serializedVersion: 5
