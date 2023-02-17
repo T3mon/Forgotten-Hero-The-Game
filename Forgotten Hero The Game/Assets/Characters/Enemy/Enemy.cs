@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
 
     }
 
-    public void TakeDamage(float damage, Vector2? knockbackFore = null)
+    public void TakeDamage(float damage, Vector2? knockbackForce = null)
     {
         health -= damage;
         if (health <= 0)
@@ -31,8 +31,8 @@ public class Enemy : MonoBehaviour
         {
             animator.SetTrigger("hit");
 
-            if (knockbackFore is not null && health > 0)
-                rb.AddForce((Vector2)knockbackFore);
+            if (knockbackForce is not null && health > 0)
+                rb.AddForce((Vector2)knockbackForce);
         }
 
 
